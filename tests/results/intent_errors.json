@@ -1,0 +1,10 @@
+[
+  {
+    "text": "not very good",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.33961644768714905
+    }
+  }
+]

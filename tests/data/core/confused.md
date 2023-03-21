@@ -1,0 +1,25 @@
+## confused story
+* mood_confused
+  - utter_confused_1
+  - user_input
+  - form{"name":"user_input"}
+  - form{"name":null}
+  - utter_confused_2
+  - user_input
+  - form{"name":"user_input"}
+  - form{"name":null}
+  - utter_confused_3
+  - user_input
+  - form{"name":"user_input"}
+  - form{"name":null}
+  - utter_confused_4
+  - user_input
+  - form{"name":"user_input"}
+  - form{"name":null}
+  - utter_confused_6
+  - user_input
+  - form{"name":"user_input"}
+  - form{"name":null}
+  - utter_confused_7
+* goodbye
+  - utter_goodbye

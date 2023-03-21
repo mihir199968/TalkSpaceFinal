@@ -1,0 +1,160 @@
+actions:
+  - action_out_of_domain
+
+entities:
+  - name
+
+slots:
+  input:
+    type: text
+  name:
+    type: text
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - mood_confused
+  - mood_lonely
+  - provider_name
+  - mood_frustated
+  - intense_frustated
+  - mild_frustated
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_greet_2:
+    - text: "What is your name?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_confused_1:
+    - text: "Hi {name} ! I'm sorry to hear that you're feeling confused. Can you tell me more about what's causing your confusion? Maybe we can work through it together."
+
+  utter_confused_2:
+    - text: "Since when did you start facing this issue?"
+
+  utter_confused_3:
+    - text: "Okay. Confusion can be a normal part of the learning process, and it's okay to feel unsure or uncertain at times. It's important to take a step back, take a deep breath, and try to identify what specifically is causing your confusion. How do you feel exactly when you are not clear about something? Are you agitated, or annoyed or just plain tired of this very confusing scenario? "
+
+  utter_confused_4:
+    - text: "It’s okay to feel this way sometimes. Remember, that it’s not necessary to have everything figured out in your life. You might feel confused at various instances of your life. You should think about how to deal with the situation at hand rather than worrying about what is going to happen or how things are going to unfold. Give it a thought. Give a affirmation when you're done."
+
+  utter_confused_6:
+    - text: "Okay so now that you have got some things cleared, let’s focus on the next bit. If you feel everything is very overwhelming, take small steps. Make a list of things you want to do and divide them into smaller pieces. Take one piece of a task at a time and try to complete it within a certain amount of time. Do not forget to take breaks in between these tasks."
+
+  utter_confused_7:
+    - text: "I hope you are feeling a bit better now and you got some insights on how to deal with a confusing situation. If you are stuck anywhere in future, just hit me up. I will be here to solve your problems."
+
+  utter_lonely_1:
+    - text: "I'm sorry to hear that you're feeling lonely. It's important to remember that feeling lonely is a common experience and it doesn't mean that there is anything wrong with you. Would you like to talk more about how you're feeling or is there anything specific that's making you feel this way?"
+
+  utter_lonely_2:
+    - text: "Of course, I'm here to listen. Please feel free to share more about what's been making you feel lonely. Sometimes, just talking about our emotions can help ease our feelings of loneliness. Remember, you're not alone in feeling this way, and there are ways to cope with loneliness."
+
+  utter_lonely_3:
+    - text: "Remember, there are ways to combat loneliness, such as reaching out to friends or loved ones, engaging in hobbies or activities you enjoy, or even seeking professional support. Whatever you need, I'm here to support you. Here are some tips that may help you combat loneliness in your new country: Join local groups or clubs based on your interests to meet new people who share your passions. Volunteer at local organizations or events to get involved in your community and give back.
+Take language classes or other courses to develop new skills and meet like-minded individuals."
+
+  utter_lonely_4:
+    - text: "These are just some ideas that you could try out. So tell me, are you feeling slightly enlightened? Just kidding, I hope you are feeling slightly better and found my advice useful"
+
+  utter_frustated_1:
+    - text: "I'm sorry to hear that you're feeling annoyed. Is there something specific that is causing your frustration? If you'd like, I'm here to listen and offer any advice or support that I can."
+
+  utter_frustated_2:
+    - custom:
+      button_type: vertical
+      text: "I see! It’s okay to feel annoyed at times. It's important to take a moment to calm down and think about the situation before reacting. Okay! Firstly, tell me on a scale of 1-3, how frustrated are you right now?"
+      buttons:
+        - title: 1
+          payload: /mild_frustated
+        - title: 2
+          payload: /mild_frustated
+        - title: 3
+          payload: /intense_frustated
+
+  utter_frustated_3:
+    - text: "Okay, so how bout we get started with a lil cheer-up? "
+      image: "https://tenor.com/k4xCvg30z9.gif"
+      gif: true
+
+  utter_frustated_4:
+    - text: "So let’s do a little exercise mate. Think about something that makes you really happy. It can be as silly as thinking of your favorite ice cream. So tell me what makes you happy?"
+
+  utter_frustated_5:
+    - text: "Ohh! That would make me happy as well, lol. Alright, so now close your eyes for 5 mins and think about this thing that makes you happy. Respond with “Done” when you are finished."
+
+  utter_frustated_6:
+    - text: "I hope that made you feel a little bit better. Nonetheless, let’s go ahead with our conversation. Often we end up classifying the entire incident to be one incident on the whole and don’t really acknowledge what actually annoyed us. Very often it is one small part or behavior which is responsible. So tell me what actually made you feel frustrated, so that we can pinpoint the real issue."
+
+  utter_frustated_7:
+    - text: "Understandable! So now that you have pinpointed what actually made you feel this way, let’s take a moment to reflect on it. The first step is acknowledging the issue which you have already done. Also, it may be helpful to try some self-care activities such as taking a walk, listening to music, or engaging in a favorite hobby. If your feelings persist and begin to impact your daily life, it may be helpful to talk to a trusted friend or a mental health professional who can provide support and guidance."
+
+  utter_frustated_8:
+    - text: "I hope you get an idea of what I am trying to say. Also, upon closure make sure you document your reflections. Keep a record of everything that you felt post action. Often, these provide some useful things for self analysis. Write it down. Put it as a story. I’m sure there will be some good results."
+
+  utter_frustated_9:
+    - text: "Alright! Calm down my friend. I'm sorry to hear that you're feeling this way. It's a normal human emotion, but it can be overwhelming and difficult to manage at times. If you'd like to talk about what's causing your frustration and work through it, I'm here to listen and support you. But before that here is something to cheer you up."
+      image: "https://tenor.com/k4xCvg30z9.gif"
+
+  utter_frustated_10:
+    - text: "Hope that made you feel a bit better. First things first, I want you to tell me what exactly is making you feel annoyed? Sometimes talking about it can help you gain a better understanding of your emotions and figure out what you can do to address them."
+
+  utter_frustated_11:
+    - text: "I see. At this point, it is important to recognize your emotions and address the issue. It's completely normal to feel irritated from time to time.  Before we discuss this any further, I want you to take deep breaths and count till 10. Respond with “done” once you have finished counting."
+
+  utter_frustated_12:
+    - text: "This exercise might have helped you calm down a bit. Next time you get annoyed at something or someone, repeat this same exercise. This can help you calm down and prevent you from saying or doing something you might regret."
+
+  utter_frustated_13:
+    - text: "Now, let us try to figure out the source of your frustration. Tell me, is it a specific situation, person, or thought? Once you identify the source, write it down on a piece of paper."
+
+  utter_frustated_15:
+    - text: "Now take that piece of paper, tear it apart and throw it in the trash. This will give you a sense of letting go of the reason that caused your frustration. This also gives the person enough time to come to terms with their reasons and thoughts running in their minds.  I hope this brought you some comfort. Tell me, now that you know what exactly frustrated you, what do you feel like doing about it?"
+
+  utter_frustated_16:
+    - text: "Often, we feel like doing things we won’t do in normal situations when we are frustrated or angry. But, I want you to know that your anger is temporary. This is not going to stay with you your whole life. This moment is going to pass soon. It won’t matter to you some years down the lane. You probably won’t even remember these little things which you now find irritating. I want you to think of your happy place."
+
+  utter_frustated_17:
+    - text: "A happy place is a location, memory, or state of mind that brings about feelings of happiness, peace, and contentment. It can be a physical place, such as a beach, park, or favorite coffee shop, or it can be a mental or emotional state that makes you feel relaxed, joyful, and fulfilled."
+
+  utter_frustated_18:
+    - text: "So, close your eyes for 30 seconds and think of your happy place."
+
+  utter_frustated_19:
+    - text: "I hope you are in a better mood now. Before I go, here are some tips to deal with frustration:
+1. Take a break: Sometimes stepping away from the situation that's causing you frustration can be helpful. Take a few deep breaths, go for a walk, or do something else to take your mind off the situation.
+
+2. Reframe the situation: Try to look at the situation from a different perspective. Is there a way to reframe it in a more positive light? This can help you see things in a different way and reduce your frustration.
+
+3. Practice self-care: Take care of yourself by getting enough sleep, eating a healthy diet, and engaging in activities that make you happy.
+
+4. Seek support: Talking to a friend, family member, or mental health professional can be helpful when you're feeling frustrated. They may be able to offer a new perspective or just provide a listening ear."
+
+forms:
+- user_input
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
